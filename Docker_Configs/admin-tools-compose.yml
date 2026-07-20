@@ -1,0 +1,2 @@
+docker network create log-net
+docker run -d --name logger --network log-net -p 514:514/udp balabit/syslog-ng

@@ -1,0 +1,2 @@
+docker network create web-net
+docker run -d --name web --network web-net -p 8080:80 nginx
